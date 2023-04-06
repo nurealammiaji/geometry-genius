@@ -9,25 +9,42 @@
 </head>
 <body>
     <header>
-        <section class="px-3 py-5 my-5 bg-blue-100 w-10/12 mx-auto rounded-xl flex justify-between items-center">
+        <!-- Logo & Button Area -->
+        <section class="w-11/12 mx-auto px-3 py-5 my-5 bg-blue-100 rounded-xl flex justify-between items-center">
             <div>
-                <h2 class="text-2xl font-medium">Interactive</h2>
-                <h4>Geometry Genius</h4>
+                <h2 class="text-2xl font-bold">Interactive</h2>
+                <h4 class="text-gray-400">Geometry Genius</h4>
             </div>
             <div>
-                <button class="bg-blue-400 px-8 py-2 rounded-lg">Blog</button>
+                <button class="bg-blue-400 hover:bg-blue-600 px-8 py-2 rounded-lg">Blog</button>
             </div>
         </section>
     </header>
     <main>
-        <section class="w-10/12 mx-auto flex rounded-lg gap-5">
+        <!-- Geometry Cards & Calculation Area -->
+        <section class="w-11/12 mx-auto flex rounded-lg gap-5">
+            <!-- Geometry Cards Area -->
             <section class="w-3/4 grid grid-cols-3 gap-2">
-                <div class="border rounded-lg p-5">
-
+                <div class="border rounded-lg p-5 hover:bg-pink-200 mx-auto text-center">
+                    <img class="mx-auto mb-3" src="./images/triangle.png" alt="">
+                    <h4 class="font-bold text-xl">Triangle</h4>
+                    <p class="text-center mb-3">Area (A) = 0.5 x b x h</p>
+                    <div class="mx-auto flex justify-evenly items-center">
+                        <input type="number" class="w-1/4 border rounded px-2" placeholder="b">
+                        <small>cm</small>
+                        <input type="number" class="w-1/4 border rounded px-2" placeholder="h">
+                        <small>cm</small>
+                    </div>
+                    <button class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5">Calculate</button>
                 </div>
             </section>
+            <!-- Geometry Calculation Area -->
             <section class="w-1/4">
                 <div class="border rounded-lg p-5">
+                    <h4 class="text-center">Calculation Area</h4>
+                    <br>
+                    <ol class="list-decimal">
+                    </ol>
                 </div>
             </section>
         </section>
