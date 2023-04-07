@@ -22,9 +22,14 @@ function areaCalculatorWithHalf(valueOne, valueTwo) {
     let button = document.createElement('button');
     button.innerText = "Convert to m2";
     button.style.margin = '3px';
-    button.style.padding = '3px'
+    button.style.marginLeft = '8px'
+    button.style.padding = '5px'
+    button.style.paddingLeft = '8px';
+    button.style.paddingRight = '8px';
+    button.style.color = 'white';
+    button.style.fontWeight = '700';
     button.style.background = 'blue';
-    button.style.borderRadius = '5px';
+    button.style.borderRadius = '4px';
     list.appendChild(button);
 
     // Object Area Display
@@ -56,9 +61,14 @@ function areaCalculator(valueOne, valueTwo) {
     let button = document.createElement('button');
     button.innerText = "Convert to m2";
     button.style.margin = '3px';
-    button.style.padding = '3px'
+    button.style.marginLeft = '8px'
+    button.style.padding = '5px'
+    button.style.paddingLeft = '8px';
+    button.style.paddingRight = '8px';
+    button.style.color = 'white';
+    button.style.fontWeight = '700';
     button.style.background = 'blue';
-    button.style.borderRadius = '3px';
+    button.style.borderRadius = '4px';
     list.appendChild(button);
 
     // Object Area Display
