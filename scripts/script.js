@@ -25,7 +25,7 @@ function objectCalculatorWithHalf(valueOne, valueTwo) {
 
 // Triangle
 document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
-    objectCalculatorWithHalf('triangle-breadth', 'triangle-height');
+    objectCalculatorWithHalf('triangle-b', 'triangle-h');
 })
 
 // Rhombus
@@ -34,6 +34,6 @@ document.getElementById('calculate-btn-rhombus').addEventListener('click', funct
 })
 
 // Pentagon
-document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
-    objectCalculatorWithHalf('triangle-breadth', 'triangle-height');
+document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
+    objectCalculatorWithHalf('pentagon-p', 'pentagon-b');
 })
