@@ -1,26 +1,39 @@
-// Triangle
+function objectCalculatorWithHalf(valueOne, valueTwo) {
 
-document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
-    
-    // Triangle Breadth
-    let triangleBreadth = document.getElementById('triangle-breadth');
-    let triangleBreadthString = triangleBreadth.value;
-    let triangleBreadthNumber = parseInt(triangleBreadthString);
+    // Object Value One
+    let ObjectValueOne = document.getElementById(valueOne);
+    let ObjectValueOneString = ObjectValueOne.value;
+    let ObjectValueOneNumber = parseInt(ObjectValueOneString);
 
-    // Triangle Height
-    let triangleHeight = document.getElementById('triangle-height');
-    let triangleHeightString = triangleHeight.value;
-    let triangleHeightNumber = parseInt(triangleHeightString);
+    // Object Value Two
+    let ObjectValueTwo = document.getElementById(valueTwo);
+    let ObjectValueTwoString = ObjectValueTwo.value;
+    let ObjectValueTwoNumber = parseInt(ObjectValueTwoString);
 
-    // Triangle Calculation
-    let triangleArea = 0.5 * triangleBreadthNumber * triangleHeightNumber + " cm2";
-    
+    // Object Calculation
+    let objectArea = 0.5 * ObjectValueOneNumber * ObjectValueTwoNumber;
+
     // Creating List
     let node = document.createElement('li');
-    let textNode = document.createTextNode(triangleArea);
+    let textNode = document.createTextNode(objectArea);
     node.appendChild(textNode);
 
-    // Triangle Display
+    // Object Area Display
     let displayList = document.getElementById('display-list');
     displayList.appendChild(node);
+}
+
+// Triangle
+document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
+    objectCalculatorWithHalf('triangle-breadth', 'triangle-height');
+})
+
+// Rhombus
+document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
+    objectCalculatorWithHalf('rhombus-d1', 'rhombus-d2');
+})
+
+// Pentagon
+document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
+    objectCalculatorWithHalf('triangle-breadth', 'triangle-height');
 })
