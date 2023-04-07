@@ -42,24 +42,24 @@
                     <h4 class="font-bold text-xl">Rectangle</h4>
                     <p class="text-center mb-3">Area (A) = w x l </p>
                     <div class="mx-auto flex justify-evenly items-center">
-                        <input type="number" class="w-1/4 border rounded px-2" placeholder="w">
+                        <input id="rectangle-w" type="number" class="w-1/4 border rounded px-2" placeholder="w">
                         <small>cm</small>
-                        <input type="number" class="w-1/4 border rounded px-2" placeholder="l">
+                        <input id="rectangle-l" type="number" class="w-1/4 border rounded px-2" placeholder="l">
                         <small>cm</small>
                     </div>
-                    <button class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button id="calculate-btn-rectangle" class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
                 <div class="border rounded-lg p-2 hover:bg-pink-200 mx-auto text-center">
                     <img class="mx-auto mb-3 h-48" src="./images/parallelogram.png" alt="">
                     <h4 class="font-bold text-xl">Parallelogram</h4>
                     <p class="text-center mb-3">Area (A) = b x h</p>
                     <div class="mx-auto flex justify-evenly items-center">
-                        <input type="number" class="w-1/4 border rounded px-2" placeholder="b">
+                        <input id="parallelogram-b" type="number" class="w-1/4 border rounded px-2" placeholder="b">
                         <small>cm</small>
-                        <input type="number" class="w-1/4 border rounded px-2" placeholder="h">
+                        <input id="parallelogram-h" type="number" class="w-1/4 border rounded px-2" placeholder="h">
                         <small>cm</small>
                     </div>
-                    <button class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button id="calculate-btn-parallelogram" class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
                 <div class="border rounded-lg p-2 hover:bg-blue-200 mx-auto text-center">
                     <img class="mx-auto mb-3 h-48" src="./images/rhombus.png" alt="">
@@ -100,7 +100,7 @@
             </section>
             <!-- Geometry Calculation Area -->
             <section class="w-1/4">
-                <div class="border rounded-lg p-2 min-h-screen">
+                <div class="border rounded-lg p-2 h-72">
                     <h4 class="text-center font-bold underline">Area Calculation</h4>
                     <br>
                     <ol id="display-list" class="list-decimal w-3/4 mx-auto">
