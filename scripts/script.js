@@ -15,12 +15,18 @@ function areaCalculatorWithHalf(valueOne, valueTwo) {
 
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectArea);
+    let listText = document.createTextNode(objectArea + ' cm');
     list.appendChild(listText);
+
+    // Creating Super Text
+    let superCM = document.createElement('sup');
+    let superTextCM = document.createTextNode('2');
+    superCM.appendChild(superTextCM);
+    list.appendChild(superCM);
 
     // Creating Button
     let button = document.createElement('button');
-    button.innerText = "Convert to m2";
+    button.innerText = "Convert to m";
     button.style.margin = '3px';
     button.style.marginLeft = '8px'
     button.style.padding = '5px'
@@ -31,7 +37,13 @@ function areaCalculatorWithHalf(valueOne, valueTwo) {
     button.style.background = 'blue';
     button.style.borderRadius = '4px';
     list.appendChild(button);
-
+    
+    // Creating Super Text
+    let superM = document.createElement('sup');
+    let superTextM = document.createTextNode('2');
+    superM.appendChild(superTextM);
+    button.appendChild(superM);
+    
     // Object Area Display
     let displayList = document.getElementById('display-list');
     displayList.appendChild(list);
@@ -54,12 +66,18 @@ function areaCalculator(valueOne, valueTwo) {
 
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectArea);
+    let listText = document.createTextNode(objectArea + ' cm');
     list.appendChild(listText);
+
+    // Creating Super Text
+    let superCM = document.createElement('sup');
+    let superTextCM = document.createTextNode('2');
+    superCM.appendChild(superTextCM);
+    list.appendChild(superCM);
 
     // Creating Button
     let button = document.createElement('button');
-    button.innerText = "Convert to m2";
+    button.innerText = 'Convert to m';
     button.style.margin = '3px';
     button.style.marginLeft = '8px'
     button.style.padding = '5px'
@@ -71,6 +89,12 @@ function areaCalculator(valueOne, valueTwo) {
     button.style.borderRadius = '4px';
     list.appendChild(button);
 
+    // Creating Super Text
+    let superM = document.createElement('sup');
+    let superTextM = document.createTextNode('2');
+    superM.appendChild(superTextM);
+    button.appendChild(superM);
+
     // Object Area Display
     let displayList = document.getElementById('display-list');
     displayList.appendChild(list);
@@ -81,16 +105,6 @@ document.getElementById('calculate-btn-triangle').addEventListener('click', func
     areaCalculatorWithHalf('triangle-b', 'triangle-h');
 })
 
-// Rhombus
-document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
-    areaCalculatorWithHalf('rhombus-d1', 'rhombus-d2');
-})
-
-// Pentagon
-document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
-    areaCalculatorWithHalf('pentagon-p', 'pentagon-b');
-})
-
 // Rectangle
 document.getElementById('calculate-btn-rectangle').addEventListener('click', function(){
     areaCalculator('rectangle-w', 'rectangle-l');
@@ -99,4 +113,14 @@ document.getElementById('calculate-btn-rectangle').addEventListener('click', fun
 // Parallelogram
 document.getElementById('calculate-btn-parallelogram').addEventListener('click', function(){
     areaCalculator('parallelogram-b', 'parallelogram-h');
+})
+
+// Rhombus
+document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
+    areaCalculatorWithHalf('rhombus-d1', 'rhombus-d2');
+})
+
+// Pentagon
+document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
+    areaCalculatorWithHalf('pentagon-p', 'pentagon-b');
 })
