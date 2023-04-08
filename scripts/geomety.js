@@ -1,17 +1,28 @@
-function areaCalculatorWithValue(objectName, valueOne, valueTwo, valueThree) {
+function areaCalculatorWithValue(objectName, constant, valueOne, valueTwo) {
 
     // Object Value One
-    let objectValueOne = document.getElementById(valueTwo);
+    let objectValueOne = document.getElementById(valueOne);
     let objectValueOneString = objectValueOne.value;
     let objectValueOneNumber = parseFloat(objectValueOneString);
 
     // Object Value Two
-    let objectValueTwo = document.getElementById(valueThree);
+    let objectValueTwo = document.getElementById(valueTwo);
     let objectValueTwoString = objectValueTwo.value;
     let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
+    if (isNaN(objectValueOneNumber)) {
+        alert('Please enter a valid number to the input field !!');
+        return;
+    }
+
+    else if (isNaN(objectValueTwoNumber)) {
+        alert('Please enter a valid number to the input field !!');
+        return;
+    }
+
+    else {
     // Object Calculation
-    let objectArea = valueOne * objectValueOneNumber * objectValueTwoNumber;
+    let objectArea = constant * objectValueOneNumber * objectValueTwoNumber;
     
     // Creating List
     let list = document.createElement('li');
@@ -47,6 +58,7 @@ function areaCalculatorWithValue(objectName, valueOne, valueTwo, valueThree) {
     // Object Area Display
     let displayList = document.getElementById('display-list');
     displayList.appendChild(list);
+    }
 }
 
 function areaCalculator(objectName, valueOne, valueTwo) {
@@ -61,6 +73,18 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     let objectValueTwoString = objectValueTwo.value;
     let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
+    if (isNaN(objectValueOneNumber)) {
+        alert('Please enter a valid number to the input field !!');
+        return;
+    }
+
+    else if (isNaN(objectValueTwoNumber)) {
+        alert('Please enter a valid number to the input field !!');
+        return;
+    }
+
+    else {
+    
     // Object Calculation
     let objectArea = objectValueOneNumber * objectValueTwoNumber;
 
@@ -98,6 +122,7 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     // Object Area Display
     let displayList = document.getElementById('display-list');
     displayList.appendChild(list);
+    }
 }
 
 // Blog
