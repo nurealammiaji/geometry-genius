@@ -34,16 +34,16 @@ function areaCalculatorWithHalf(objectName, valueOne, valueTwo) {
     button.style.paddingRight = '8px';
     button.style.color = 'white';
     button.style.fontWeight = '700';
-    button.style.background = 'blue';
+    button.style.background = 'rgb(37 99 235)';
     button.style.borderRadius = '4px';
     list.appendChild(button);
-    
+
     // Creating Super Text
     let superM = document.createElement('sup');
     let superTextM = document.createTextNode('2');
     superM.appendChild(superTextM);
     button.appendChild(superM);
-    
+
     // Object Area Display
     let displayList = document.getElementById('display-list');
     displayList.appendChild(list);
@@ -85,7 +85,7 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     button.style.paddingRight = '8px';
     button.style.color = 'white';
     button.style.fontWeight = '700';
-    button.style.background = 'blue';
+    button.style.background = 'rgb(37 99 235)';
     button.style.borderRadius = '4px';
     list.appendChild(button);
 
@@ -99,6 +99,11 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     let displayList = document.getElementById('display-list');
     displayList.appendChild(list);
 }
+
+// Blog
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
 
 // Triangle
 document.getElementById('calculate-btn-triangle').addEventListener('click', function(){

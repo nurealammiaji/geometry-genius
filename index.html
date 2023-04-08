@@ -16,7 +16,7 @@
                 <h4 class="text-gray-400">Geometry Genius</h4>
             </div>
             <div>
-                <button class="bg-blue-400 hover:bg-blue-600 px-8 py-2 rounded-lg font-bold text-white">Blog</button>
+                <button id="blog-btn" class="bg-blue-600 hover:bg-blue-800 px-8 py-2 rounded-lg font-bold text-white">Blog</button>
             </div>
         </section>
     </header>
@@ -35,7 +35,7 @@
                         <input id="triangle-h" type="number" class="w-1/4 border rounded px-2" placeholder="h">
                         <small>cm</small>
                     </div>
-                    <button id="calculate-btn-triangle" class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button id="calculate-btn-triangle" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
                 <div class="border rounded-lg p-2 hover:bg-pink-200 mx-auto text-center">
                     <img class="mx-auto mb-3 h-48" src="./images/rectangle.png" alt="">
@@ -47,7 +47,7 @@
                         <input id="rectangle-l" type="number" class="w-1/4 border rounded px-2" placeholder="l">
                         <small>cm</small>
                     </div>
-                    <button id="calculate-btn-rectangle" class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button id="calculate-btn-rectangle" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
                 <div class="border rounded-lg p-2 hover:bg-pink-200 mx-auto text-center">
                     <img class="mx-auto mb-3 h-48" src="./images/parallelogram.png" alt="">
@@ -59,7 +59,7 @@
                         <input id="parallelogram-h" type="number" class="w-1/4 border rounded px-2" placeholder="h">
                         <small>cm</small>
                     </div>
-                    <button id="calculate-btn-parallelogram" class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button id="calculate-btn-parallelogram" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
                 <div class="border rounded-lg p-2 hover:bg-blue-200 mx-auto text-center">
                     <img class="mx-auto mb-3 h-48" src="./images/rhombus.png" alt="">
@@ -71,7 +71,7 @@
                         <input id="rhombus-d2" type="number" class="w-1/4 border rounded px-2" placeholder="d2">
                         <small>cm</small>
                     </div>
-                    <button id="calculate-btn-rhombus" class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button id="calculate-btn-rhombus" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
                 <div class="border rounded-lg p-2 hover:bg-blue-200 mx-auto text-center">
                     <img class="mx-auto mb-3 h-48" src="./images/pentagon.png" alt="">
@@ -83,7 +83,7 @@
                         <input id="pentagon-b" type="number" class="w-1/4 border rounded px-2" placeholder="b">
                         <small>cm</small>
                     </div>
-                    <button id="calculate-btn-pentagon" class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button id="calculate-btn-pentagon" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
                 <div class="border rounded-lg p-2 hover:bg-blue-200 mx-auto text-center">
                     <img class="mx-auto mb-3 h-48" src="./images/ellipse.png" alt="">
@@ -95,12 +95,12 @@
                         <input type="number" class="w-1/4 border rounded px-2" placeholder="b">
                         <small>cm</small>
                     </div>
-                    <button class="w-full bg-blue-400 hover:bg-blue-600 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
+                    <button class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                 </div>
             </section>
             <!-- Geometry Calculation Area -->
             <section class="w-1/4">
-                <div class="border rounded-lg p-2 h-72">
+                <div class="border rounded-lg p-2 h-screen">
                     <h4 class="text-center font-bold underline">Area Calculation</h4>
                     <br>
                     <ol id="display-list" class="list-decimal w-3/4 mx-auto">
@@ -110,6 +110,6 @@
         </section>
     </main>
     <!-- JS Scripts -->
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/geomety.js"></script>
 </body>
 </html>
