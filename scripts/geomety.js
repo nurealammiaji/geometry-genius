@@ -107,25 +107,25 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 
 // Triangle
 document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
-    areaCalculatorWithHalf("Triangle", 'triangle-b', 'triangle-h');
+    areaCalculatorWithHalf("Triangle:", 'triangle-b', 'triangle-h');
 })
 
 // Rectangle
 document.getElementById('calculate-btn-rectangle').addEventListener('click', function(){
-    areaCalculator("Rectangle", 'rectangle-w', 'rectangle-l');
+    areaCalculator("Rectangle:", 'rectangle-w', 'rectangle-l');
 })
 
 // Parallelogram
 document.getElementById('calculate-btn-parallelogram').addEventListener('click', function(){
-    areaCalculator("Parallelogram", 'parallelogram-b', 'parallelogram-h');
+    areaCalculator("Parallelogram:", 'parallelogram-b', 'parallelogram-h');
 })
 
 // Rhombus
 document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
-    areaCalculatorWithHalf("Rhombus", 'rhombus-d1', 'rhombus-d2');
+    areaCalculatorWithHalf("Rhombus:", 'rhombus-d1', 'rhombus-d2');
 })
 
 // Pentagon
 document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
-    areaCalculatorWithHalf("Pentagon", 'pentagon-p', 'pentagon-b');
+    areaCalculatorWithHalf("Pentagon:", 'pentagon-p', 'pentagon-b');
 })
