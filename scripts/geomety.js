@@ -1,21 +1,21 @@
-function areaCalculatorWithHalf(objectName, valueOne, valueTwo) {
+function areaCalculatorWithValue(objectName, valueOne, valueTwo, valueThree) {
 
     // Object Value One
-    let objectValueOne = document.getElementById(valueOne);
+    let objectValueOne = document.getElementById(valueTwo);
     let objectValueOneString = objectValueOne.value;
-    let objectValueOneNumber = parseInt(objectValueOneString);
+    let objectValueOneNumber = parseFloat(objectValueOneString);
 
     // Object Value Two
-    let objectValueTwo = document.getElementById(valueTwo);
+    let objectValueTwo = document.getElementById(valueThree);
     let objectValueTwoString = objectValueTwo.value;
-    let objectValueTwoNumber = parseInt(objectValueTwoString);
+    let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
     // Object Calculation
-    let objectArea = 0.5 * objectValueOneNumber * objectValueTwoNumber;
-
+    let objectArea = valueOne * objectValueOneNumber * objectValueTwoNumber;
+    
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectName + ' ' + objectArea + ' cm');
+    let listText = document.createTextNode(objectName + ' ' + objectArea.toFixed(2) + ' cm');
     list.appendChild(listText);
 
     // Creating Super Text
@@ -33,7 +33,7 @@ function areaCalculatorWithHalf(objectName, valueOne, valueTwo) {
     button.style.paddingLeft = '8px';
     button.style.paddingRight = '8px';
     button.style.color = 'white';
-    button.style.fontWeight = '700';
+    button.style.fontWeight = '500';
     button.style.background = 'rgb(37 99 235)';
     button.style.borderRadius = '4px';
     list.appendChild(button);
@@ -54,19 +54,19 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     // Object Value One
     let objectValueOne = document.getElementById(valueOne);
     let objectValueOneString = objectValueOne.value;
-    let objectValueOneNumber = parseInt(objectValueOneString);
+    let objectValueOneNumber = parseFloat(objectValueOneString);
 
     // Object Value Two
     let objectValueTwo = document.getElementById(valueTwo);
     let objectValueTwoString = objectValueTwo.value;
-    let objectValueTwoNumber = parseInt(objectValueTwoString);
+    let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
     // Object Calculation
     let objectArea = objectValueOneNumber * objectValueTwoNumber;
 
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectName + ' ' + objectArea + ' cm');
+    let listText = document.createTextNode(objectName + ' ' + objectArea.toFixed(2) + ' cm');
     list.appendChild(listText);
 
     // Creating Super Text
@@ -84,7 +84,7 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     button.style.paddingLeft = '8px';
     button.style.paddingRight = '8px';
     button.style.color = 'white';
-    button.style.fontWeight = '700';
+    button.style.fontWeight = '500';
     button.style.background = 'rgb(37 99 235)';
     button.style.borderRadius = '4px';
     list.appendChild(button);
@@ -107,7 +107,7 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 
 // Triangle
 document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
-    areaCalculatorWithHalf("Triangle:", 'triangle-b', 'triangle-h');
+    areaCalculatorWithValue("Triangle:", 0.5, 'triangle-b', 'triangle-h');
 })
 
 // Rectangle
@@ -122,10 +122,15 @@ document.getElementById('calculate-btn-parallelogram').addEventListener('click',
 
 // Rhombus
 document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
-    areaCalculatorWithHalf("Rhombus:", 'rhombus-d1', 'rhombus-d2');
+    areaCalculatorWithValue("Rhombus:", 0.5, 'rhombus-d1', 'rhombus-d2');
 })
 
 // Pentagon
 document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
-    areaCalculatorWithHalf("Pentagon:", 'pentagon-p', 'pentagon-b');
+    areaCalculatorWithValue("Pentagon:", 0.5, 'pentagon-p', 'pentagon-b');
+})
+
+// Ellipse
+document.getElementById('calculate-btn-ellipse').addEventListener('click', function(){
+    areaCalculatorWithValue("Ellipse:", 3.14, 'ellipse-a', 'ellipse-b');
 })
