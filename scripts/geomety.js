@@ -11,12 +11,12 @@ function areaCalculatorWithValue(objectName, constant, valueOne, valueTwo) {
     let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
     if (isNaN(objectValueOneNumber)) {
-        alert('Please enter a valid number to the input field !!');
+        alert('Please enter a valid number to the first input field !!');
         return;
     }
 
     else if (isNaN(objectValueTwoNumber)) {
-        alert('Please enter a valid number to the input field !!');
+        alert('Please enter a valid number to the second input field !!');
         return;
     }
 
@@ -74,12 +74,12 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
     if (isNaN(objectValueOneNumber)) {
-        alert('Please enter a valid number to the input field !!');
+        alert('Please enter a valid number to the first input field !!');
         return;
     }
 
     else if (isNaN(objectValueTwoNumber)) {
-        alert('Please enter a valid number to the input field !!');
+        alert('Please enter a valid number to the second input field !!');
         return;
     }
 
