@@ -1,4 +1,4 @@
-function areaCalculatorWithHalf(valueOne, valueTwo) {
+function areaCalculatorWithHalf(objectName, valueOne, valueTwo) {
 
     // Object Value One
     let objectValueOne = document.getElementById(valueOne);
@@ -15,7 +15,7 @@ function areaCalculatorWithHalf(valueOne, valueTwo) {
 
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectArea + ' cm');
+    let listText = document.createTextNode(objectName + ' ' + objectArea + ' cm');
     list.appendChild(listText);
 
     // Creating Super Text
@@ -49,7 +49,7 @@ function areaCalculatorWithHalf(valueOne, valueTwo) {
     displayList.appendChild(list);
 }
 
-function areaCalculator(valueOne, valueTwo) {
+function areaCalculator(objectName, valueOne, valueTwo) {
 
     // Object Value One
     let objectValueOne = document.getElementById(valueOne);
@@ -66,7 +66,7 @@ function areaCalculator(valueOne, valueTwo) {
 
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectArea + ' cm');
+    let listText = document.createTextNode(objectName + ' ' + objectArea + ' cm');
     list.appendChild(listText);
 
     // Creating Super Text
@@ -102,25 +102,25 @@ function areaCalculator(valueOne, valueTwo) {
 
 // Triangle
 document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
-    areaCalculatorWithHalf('triangle-b', 'triangle-h');
+    areaCalculatorWithHalf("Triangle", 'triangle-b', 'triangle-h');
 })
 
 // Rectangle
 document.getElementById('calculate-btn-rectangle').addEventListener('click', function(){
-    areaCalculator('rectangle-w', 'rectangle-l');
+    areaCalculator("Rectangle", 'rectangle-w', 'rectangle-l');
 })
 
 // Parallelogram
 document.getElementById('calculate-btn-parallelogram').addEventListener('click', function(){
-    areaCalculator('parallelogram-b', 'parallelogram-h');
+    areaCalculator("Parallelogram", 'parallelogram-b', 'parallelogram-h');
 })
 
 // Rhombus
 document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
-    areaCalculatorWithHalf('rhombus-d1', 'rhombus-d2');
+    areaCalculatorWithHalf("Rhombus", 'rhombus-d1', 'rhombus-d2');
 })
 
 // Pentagon
 document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
-    areaCalculatorWithHalf('pentagon-p', 'pentagon-b');
+    areaCalculatorWithHalf("Pentagon", 'pentagon-p', 'pentagon-b');
 })
