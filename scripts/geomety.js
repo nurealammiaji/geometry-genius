@@ -1,4 +1,4 @@
-function areaCalculatorWithValue(objectName, constant, valueOne, valueTwo) {
+function areaCalculatorWithConstant(objectName, constant, valueOne, valueTwo) {
 
     // Object Value One
     let objectValueOne = document.getElementById(valueOne);
@@ -11,12 +11,12 @@ function areaCalculatorWithValue(objectName, constant, valueOne, valueTwo) {
     let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
     if (isNaN(objectValueOneNumber)) {
-        alert('Please enter a valid number to the first input field !!');
+        alert("Please enter a valid number to the " + objectName + "'s first input field !!");
         return;
     }
 
     else if (isNaN(objectValueTwoNumber)) {
-        alert('Please enter a valid number to the second input field !!');
+        alert("Please enter a valid number to the " + objectName + "'s second input field !!");
         return;
     }
 
@@ -26,7 +26,7 @@ function areaCalculatorWithValue(objectName, constant, valueOne, valueTwo) {
     
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectName + ' ' + objectArea.toFixed(2) + ' cm');
+    let listText = document.createTextNode(objectName + ' ' + objectArea.toFixed(2) + 'cm');
     list.appendChild(listText);
 
     // Creating Super Text
@@ -74,23 +74,23 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     let objectValueTwoNumber = parseFloat(objectValueTwoString);
 
     if (isNaN(objectValueOneNumber)) {
-        alert('Please enter a valid number to the first input field !!');
+        alert("Please enter a valid number to the " + objectName + "'s first input field !!");
         return;
     }
 
     else if (isNaN(objectValueTwoNumber)) {
-        alert('Please enter a valid number to the second input field !!');
+        alert("Please enter a valid number to the " + objectName + "'s second input field !!");
         return;
     }
 
     else {
-    
+
     // Object Calculation
     let objectArea = objectValueOneNumber * objectValueTwoNumber;
 
     // Creating List
     let list = document.createElement('li');
-    let listText = document.createTextNode(objectName + ' ' + objectArea.toFixed(2) + ' cm');
+    let listText = document.createTextNode(objectName + ' ' + objectArea.toFixed(2) + 'cm');
     list.appendChild(listText);
 
     // Creating Super Text
@@ -132,30 +132,30 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 
 // Triangle
 document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
-    areaCalculatorWithValue("Triangle:", 0.5, 'triangle-b', 'triangle-h');
+    areaCalculatorWithConstant("Triangle", 0.5, 'triangle-b', 'triangle-h');
 })
 
 // Rectangle
 document.getElementById('calculate-btn-rectangle').addEventListener('click', function(){
-    areaCalculator("Rectangle:", 'rectangle-w', 'rectangle-l');
+    areaCalculator("Rectangle", 'rectangle-w', 'rectangle-l');
 })
 
 // Parallelogram
 document.getElementById('calculate-btn-parallelogram').addEventListener('click', function(){
-    areaCalculator("Parallelogram:", 'parallelogram-b', 'parallelogram-h');
+    areaCalculator("Parallelogram", 'parallelogram-b', 'parallelogram-h');
 })
 
 // Rhombus
 document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
-    areaCalculatorWithValue("Rhombus:", 0.5, 'rhombus-d1', 'rhombus-d2');
+    areaCalculatorWithConstant("Rhombus", 0.5, 'rhombus-d1', 'rhombus-d2');
 })
 
 // Pentagon
 document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
-    areaCalculatorWithValue("Pentagon:", 0.5, 'pentagon-p', 'pentagon-b');
+    areaCalculatorWithConstant("Pentagon", 0.5, 'pentagon-p', 'pentagon-b');
 })
 
 // Ellipse
 document.getElementById('calculate-btn-ellipse').addEventListener('click', function(){
-    areaCalculatorWithValue("Ellipse:", 3.14, 'ellipse-a', 'ellipse-b');
+    areaCalculatorWithConstant("Ellipse", 3.14, 'ellipse-a', 'ellipse-b');
 })
