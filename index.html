@@ -28,74 +28,74 @@
             <div class="w-full mx-auto flex-column sm:flex rounded-lg gap-5">
                 <!-- Geometry Cards Area -->
                 <section class="w-full md:w-8/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-                    <div class="border rounded-lg p-2 hover:bg-pink-200 mx-auto text-center">
+                    <div id="triangle-card" class="border rounded-lg p-2 mx-auto text-center">
                         <img class="mx-auto mb-3 h-24" src="./images/triangle.png" alt="">
                         <h4 class="font-bold text-xl">Triangle</h4>
                         <p class="text-center mb-3">Area (A) = 0.5 x b x h</p>
                         <div class="mx-auto flex justify-evenly items-center">
-                            <input id="triangle-b" type="text" class="w-1/4 border rounded px-2" placeholder="b">
+                            <input id="triangle-b" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="b">
                             <small>cm</small>
-                            <input id="triangle-h" type="text" class="w-1/4 border rounded px-2" placeholder="h">
+                            <input id="triangle-h" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="h">
                             <small>cm</small>
                         </div>
                         <button id="calculate-btn-triangle" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                     </div>
-                    <div class="border rounded-lg p-2 hover:bg-pink-200 mx-auto text-center">
+                    <div id="rectangle-card" class="border rounded-lg p-2 mx-auto text-center">
                         <img class="mx-auto mb-3 h-24" src="./images/rectangle.png" alt="">
                         <h4 class="font-bold text-xl">Rectangle</h4>
                         <p class="text-center mb-3">Area (A) = w x l </p>
                         <div class="mx-auto flex justify-evenly items-center">
-                            <input id="rectangle-w" type="text" class="w-1/4 border rounded px-2" placeholder="w">
+                            <input id="rectangle-w" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="w">
                             <small>cm</small>
-                            <input id="rectangle-l" type="text" class="w-1/4 border rounded px-2" placeholder="l">
+                            <input id="rectangle-l" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="l">
                             <small>cm</small>
                         </div>
                         <button id="calculate-btn-rectangle" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                     </div>
-                    <div class="border rounded-lg p-2 hover:bg-pink-200 mx-auto text-center">
+                    <div id="parallelogram-card" class="border rounded-lg p-2 mx-auto text-center">
                         <img class="mx-auto mb-3 h-24" src="./images/parallelogram.png" alt="">
                         <h4 class="font-bold text-xl">Parallelogram</h4>
                         <p class="text-center mb-3">Area (A) = b x h</p>
                         <div class="mx-auto flex justify-evenly items-center">
-                            <input id="parallelogram-b" type="text" class="w-1/4 border rounded px-2" placeholder="b">
+                            <input id="parallelogram-b" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="b">
                             <small>cm</small>
-                            <input id="parallelogram-h" type="text" class="w-1/4 border rounded px-2" placeholder="h">
+                            <input id="parallelogram-h" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="h">
                             <small>cm</small>
                         </div>
                         <button id="calculate-btn-parallelogram" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                     </div>
-                    <div class="border rounded-lg p-2 hover:bg-blue-200 mx-auto text-center">
+                    <div id="rhombus-card" class="border rounded-lg p-2 mx-auto text-center">
                         <img class="mx-auto mb-3 h-24" src="./images/rhombus.png" alt="">
                         <h4 class="font-bold text-xl">Rhombus</h4>
                         <p class="text-center mb-3">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="mx-auto flex justify-evenly items-center">
-                            <input id="rhombus-d1" type="text" class="w-1/4 border rounded px-2" placeholder="d1">
+                            <input id="rhombus-d1" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="d1">
                             <small>cm</small>
-                            <input id="rhombus-d2" type="text" class="w-1/4 border rounded px-2" placeholder="d2">
+                            <input id="rhombus-d2" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="d2">
                             <small>cm</small>
                         </div>
                         <button id="calculate-btn-rhombus" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                     </div>
-                    <div class="border rounded-lg p-2 hover:bg-blue-200 mx-auto text-center">
+                    <div id="pentagon-card" class="border rounded-lg p-2 mx-auto text-center">
                         <img class="mx-auto mb-3 h-24" src="./images/pentagon.png" alt="">
                         <h4 class="font-bold text-xl">Pentagon</h4>
                         <p class="text-center mb-3">Area (A) = 0.5 x p x b</p>
                         <div class="mx-auto flex justify-evenly items-center">
-                            <input id="pentagon-p" type="text" class="w-1/4 border rounded px-2" placeholder="p">
+                            <input id="pentagon-p" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="p">
                             <small>cm</small>
-                            <input id="pentagon-b" type="text" class="w-1/4 border rounded px-2" placeholder="b">
+                            <input id="pentagon-b" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="b">
                             <small>cm</small>
                         </div>
                         <button id="calculate-btn-pentagon" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>
                     </div>
-                    <div class="border rounded-lg p-2 hover:bg-blue-200 mx-auto text-center">
+                    <div id="ellipse-card" class="border rounded-lg p-2 mx-auto text-center">
                         <img class="mx-auto mb-3 h-24" src="./images/ellipse.png" alt="">
                         <h4 class="font-bold text-xl">Ellipse</h4>
                         <p class="text-center mb-3">Area (A) =  π x a x b</p>
                         <div class="mx-auto flex justify-evenly items-center">
-                            <input id="ellipse-a" type="text" class="w-1/4 border rounded px-2" placeholder="a">
+                            <input id="ellipse-a" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="a">
                             <small>cm</small>
-                            <input id="ellipse-b" type="text" class="w-1/4 border rounded px-2" placeholder="b">
+                            <input id="ellipse-b" type="text" class="w-1/4 border rounded px-2 text-black" placeholder="b">
                             <small>cm</small>
                         </div>
                         <button id="calculate-btn-ellipse" class="w-full bg-blue-600 hover:bg-blue-800 py-2 rounded-lg mt-5 text-white font-bold">Calculate</button>

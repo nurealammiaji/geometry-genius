@@ -125,37 +125,90 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     }
 }
 
-// Blog
+// Blog Button
 document.getElementById('blog-btn').addEventListener('click', function(){
     window.location.href = 'blog.html';
 })
 
-// Triangle
+// document.getElementById('bg-random').addEventListener('mouseover', function(){
+//     var randomString = Math.round(Math.random()*16777215).toString(16);
+//     let randomBgColor = '#' + randomString;
+//     let card = document.getElementById('bg-random');
+//     card.style.background = randomBgColor;
+//     card.style.color = 'white';
+//     card.style.fontWeight = '700';
+// })
+
+// Random Color
+function randomBg(elementID) {
+
+    // Color Generator
+    var randomString = Math.round(Math.random()*16777215).toString(16);
+    let randomBgColor = '#' + randomString;
+
+    // Card Random Background
+    let card = document.getElementById(elementID);
+    card.style.background = randomBgColor;
+    card.style.color = 'white';
+    card.style.fontWeight = '700';
+}
+
+// Triangle Card
+document.getElementById('triangle-card').addEventListener('mouseover', function(){
+    randomBg('triangle-card');
+})
+
+// Rectangle Card
+document.getElementById('rectangle-card').addEventListener('mouseover', function(){
+    randomBg('rectangle-card');
+})
+
+// Parallelogram Card
+document.getElementById('parallelogram-card').addEventListener('mouseover', function(){
+    randomBg('parallelogram-card');
+})
+
+// Rhombus Card
+document.getElementById('rhombus-card').addEventListener('mouseover', function(){
+    randomBg('rhombus-card');
+})
+
+// Pentagon Card
+document.getElementById('pentagon-card').addEventListener('mouseover', function(){
+    randomBg('pentagon-card');
+})
+
+// Ellipse Card
+document.getElementById('ellipse-card').addEventListener('mouseover', function(){
+    randomBg('ellipse-card');
+})
+
+// Triangle Button
 document.getElementById('calculate-btn-triangle').addEventListener('click', function(){
     areaCalculatorWithConstant("Triangle", 0.5, 'triangle-b', 'triangle-h');
 })
 
-// Rectangle
+// Rectangle Button
 document.getElementById('calculate-btn-rectangle').addEventListener('click', function(){
     areaCalculator("Rectangle", 'rectangle-w', 'rectangle-l');
 })
 
-// Parallelogram
+// Parallelogram Button
 document.getElementById('calculate-btn-parallelogram').addEventListener('click', function(){
     areaCalculator("Parallelogram", 'parallelogram-b', 'parallelogram-h');
 })
 
-// Rhombus
+// Rhombus Button
 document.getElementById('calculate-btn-rhombus').addEventListener('click', function(){
     areaCalculatorWithConstant("Rhombus", 0.5, 'rhombus-d1', 'rhombus-d2');
 })
 
-// Pentagon
+// Pentagon Button
 document.getElementById('calculate-btn-pentagon').addEventListener('click', function(){
     areaCalculatorWithConstant("Pentagon", 0.5, 'pentagon-p', 'pentagon-b');
 })
 
-// Ellipse
+// Ellipse Button
 document.getElementById('calculate-btn-ellipse').addEventListener('click', function(){
     areaCalculatorWithConstant("Ellipse", 3.14, 'ellipse-a', 'ellipse-b');
 })
