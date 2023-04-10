@@ -1,3 +1,4 @@
+// Area Calculator with Constant Function
 function areaCalculatorWithConstant(objectName, constant, valueOne, valueTwo) {
 
     // Object Value One
@@ -61,6 +62,7 @@ function areaCalculatorWithConstant(objectName, constant, valueOne, valueTwo) {
     }
 }
 
+// Area Calculator Function
 function areaCalculator(objectName, valueOne, valueTwo) {
 
     // Object Value One
@@ -125,25 +127,11 @@ function areaCalculator(objectName, valueOne, valueTwo) {
     }
 }
 
-// Blog Button
-document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href = 'blog.html';
-})
-
-// document.getElementById('bg-random').addEventListener('mouseover', function(){
-//     var randomString = Math.round(Math.random()*16777215).toString(16);
-//     let randomBgColor = '#' + randomString;
-//     let card = document.getElementById('bg-random');
-//     card.style.background = randomBgColor;
-//     card.style.color = 'white';
-//     card.style.fontWeight = '700';
-// })
-
-// Random Color
+// Random Color Function
 function randomBg(elementID) {
 
     // Color Generator
-    var randomString = Math.round(Math.random()*16777215).toString(16);
+    let randomString = Math.round(Math.random()*16777215).toString(16);
     let randomBgColor = '#' + randomString;
 
     // Card Random Background
@@ -153,34 +141,74 @@ function randomBg(elementID) {
     card.style.fontWeight = '700';
 }
 
+// Normal Color Function
+function normalBg(elementID) {
+
+    // Card Normal Background
+    let card = document.getElementById(elementID);
+    card.style.background = '';
+    card.style.color = '';
+    card.style.fontWeight = '';
+}
+
+
+// Blog Button
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
+
 // Triangle Card
-document.getElementById('triangle-card').addEventListener('mouseover', function(){
+document.getElementById('triangle-card').addEventListener('mouseenter', function(){
     randomBg('triangle-card');
 })
 
+document.getElementById('triangle-card').addEventListener('mouseleave', function(){
+    normalBg('triangle-card');
+})
+
 // Rectangle Card
-document.getElementById('rectangle-card').addEventListener('mouseover', function(){
+document.getElementById('rectangle-card').addEventListener('mouseenter', function(){
     randomBg('rectangle-card');
 })
 
+document.getElementById('rectangle-card').addEventListener('mouseleave', function(){
+    normalBg('rectangle-card');
+})
+
 // Parallelogram Card
-document.getElementById('parallelogram-card').addEventListener('mouseover', function(){
+document.getElementById('parallelogram-card').addEventListener('mouseenter', function(){
     randomBg('parallelogram-card');
 })
 
+document.getElementById('parallelogram-card').addEventListener('mouseleave', function(){
+    normalBg('parallelogram-card');
+})
+
 // Rhombus Card
-document.getElementById('rhombus-card').addEventListener('mouseover', function(){
+document.getElementById('rhombus-card').addEventListener('mouseenter', function(){
     randomBg('rhombus-card');
 })
 
+document.getElementById('rhombus-card').addEventListener('mouseleave', function(){
+    normalBg('rhombus-card');
+})
+
 // Pentagon Card
-document.getElementById('pentagon-card').addEventListener('mouseover', function(){
+document.getElementById('pentagon-card').addEventListener('mouseenter', function(){
     randomBg('pentagon-card');
 })
 
+document.getElementById('pentagon-card').addEventListener('mouseleave', function(){
+    normalBg('pentagon-card');
+})
+
 // Ellipse Card
-document.getElementById('ellipse-card').addEventListener('mouseover', function(){
+document.getElementById('ellipse-card').addEventListener('mouseenter', function(){
     randomBg('ellipse-card');
+})
+
+document.getElementById('ellipse-card').addEventListener('mouseleave', function(){
+    normalBg('ellipse-card');
 })
 
 // Triangle Button
